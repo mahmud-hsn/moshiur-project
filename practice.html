@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>progress bars</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.3.0/raphael.min.js" integrity="sha512-tBzZQxySO5q5lqwLWfu8Q+o4VkTcRGOeQGVQ0ueJga4A1RKuzmAu5HXDOXLEjpbKyV7ow9ympVoa6wZLEzRzDg==" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+  <div class="percent" style="width:80px;height:80px;">
+  <p style="display:block;">60%</p>
+  </div>
+
+  <script>
+  $(document).ready(function(){
+    $('.percent').percentageLoader({
+  strokeWidth: 8
+});
+$('.percent').percentageLoader({
+  strokeWidth: 8
+});
+$('.percent').percentageLoader({
+  bgColor: '#d9d9d9',
+  ringColor: '#d53f3f',
+  textColor: '#9a9a9a'
+});
+$('.percent').percentageLoader({
+  valElement: 'p',
+  fontSize: '12px',
+  fontWeight: 'normal'
+});
+
+  })
+  </script>
+  <script src="jQuery.circleProgressBar.min.js"></script>
+
+
+</body>
+</html>
